@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff"
+    android:orientation="vertical"
     tools:context=".LoginActivity">
 
     <LinearLayout
@@ -22,7 +23,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="25dp"
             android:drawableLeft="@drawable/email"
             android:hint="Enter Email Address"
             android:padding="5dp" />
@@ -66,7 +67,7 @@
         android:layout_height="41dp"
         android:layout_marginStart="56dp"
         android:layout_marginTop="84dp"
-        android:text="don't have account?create one for FREE."
+        android:text="Don't have account? Create one for FREE."
         android:textColor="#F1AA02"
         android:textSize="15sp"
         android:textStyle="italic"
