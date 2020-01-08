@@ -1,5 +1,8 @@
 package com.softwarica.hamrobazar.api;
 
+import android.media.Image;
+import android.os.StrictMode;
+
 import com.softwarica.hamrobazar.model.User;
 import com.softwarica.hamrobazar.serverresponse.ImageResponse;
 import com.softwarica.hamrobazar.serverresponse.SignUpResponse;
@@ -20,10 +23,9 @@ public interface UsersAPI {
 
     @FormUrlEncoded
     @POST("users/login")
-    Call<SignUpResponse> checkUser(@Field("username") String username, @Field("password") String password);
+    Call<SignUpResponse> checkUser(@Field("username")String username, @Field("password") String password);
 
     @Multipart
     @POST("upload")
     Call<ImageResponse> uploadImage(@Part MultipartBody.Part img);
-
 }
