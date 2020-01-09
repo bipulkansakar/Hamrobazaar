@@ -55,7 +55,7 @@ public class TermsAndConditionActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (cbTerms.isChecked() && cbSafety.isChecked() && cbPosting.isChecked()) {
-                    startActivity(new Intent(TermsAndConditionActivity.this, LoginActivity.class));
+                    startActivity(new Intent(TermsAndConditionActivity.this, DashboardActivity.class));
                 }
                 
                 else {
