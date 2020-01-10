@@ -3,19 +3,21 @@
     package="com.softwarica.hamrobazar">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
+        android:requestLegacyExternalStorage="true"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:usesCleartextTraffic="true"
-        >
+        android:usesCleartextTraffic="true">
+        <activity android:name=".adapter.ProductsAdapter"></activity>
         <activity android:name=".ViewPagerActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".PopularActivity" />
@@ -27,7 +29,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TermsandConditions.PostingActivity" android:label="Terms and Condition"/>
+        <activity
+            android:name=".TermsandConditions.PostingActivity"
+            android:label="Terms and Condition" />
         <activity android:name=".TermsandConditions.SafetyActivity" />
         <activity android:name=".TermsandConditions.TermsActivity" />
         <activity android:name=".LoginActivity" />

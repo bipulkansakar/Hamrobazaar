@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:background="#E9E5E5"
     android:orientation="vertical"
-    tools:context="RegisterActivity">
+    tools:context=".RegisterActivity">
 
     <LinearLayout
         android:id="@+id/sliderDotsPanel"
@@ -16,7 +16,6 @@
         android:layout_height="60dp"
         android:background="#479FD8"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="@+id/imgSlider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -110,7 +109,7 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/etfullName"
+                    android:id="@+id/etFullName"
                     android:layout_width="308dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
@@ -246,8 +245,8 @@
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
-                <EditText
-                    android:id="@+id/etAddress3"
+                <Spinner
+                    android:id="@+id/spinAddress3"
                     android:layout_width="308dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
@@ -306,7 +305,8 @@
                     android:textColor="#fff" />
 
             </LinearLayout>
-        </ScrollView></LinearLayout>
+        </ScrollView>
+    </LinearLayout>
     <ImageView
         android:id="@+id/imgBack"
         android:layout_width="53dp"
